@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Free Yisrael</title>
+<style>
+  :root {
+    --bg:#FAF6F0; --surface:#FFFFFF; --text:#2A2018; --muted:#6B5B4A;
+    --primary:#E0995E; --accent:#6B4A36; --border:#E7DDCE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#1C1813; --surface:#26211B; --text:#F5EFE7; --muted:#B5A695;
+             --accent:#C2A184; --border:#3A332B; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:44rem; margin:0 auto; padding:2.5rem 1.25rem 5rem; }
+  header { border-bottom:1px solid var(--border); padding-bottom:1.25rem; margin-bottom:2rem; }
+  .brand { font-size:.75rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--primary); font-weight:800; text-decoration:none; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:.6rem 0 0; }
+  h2 { font-size:1.15rem; margin:2.2rem 0 .6rem; color:var(--accent); }
+  @media (prefers-color-scheme: dark) { h2 { color:var(--primary); } }
+  a { color:var(--primary); }
+  hr { border:0; border-top:1px solid var(--border); margin:2rem 0; }
+  li { margin:.3rem 0; }
+  code { background:var(--surface); padding:.1rem .3rem; border-radius:4px; }
+  footer { margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--border);
+    color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="brand" href="./">Free Yisrael</a></header>
+<h1>Free Yisrael — Privacy Policy</h1>
+<p><strong>Last updated: 16 July 2026</strong></p>
+<p>Free Yisrael is a free app for the Israelite community. This policy sets out what the app collects, where it goes, who can see it, and how to have it deleted.</p>
+<p>The app is operated by <strong>Justin Bell</strong> ("we", "us").</p>
+<hr />
+<h2>1. What you give us</h2>
+<p>When you make an account:</p>
+<ul>
+<li>Your <strong>email address</strong> and a <strong>password</strong>. Passwords are handled by our authentication provider (Supabase) and stored as a cryptographic hash — nobody at Free Yisrael can read your password.</li>
+<li>Your <strong>name</strong> and <strong>date of birth</strong> (required at sign-up), and a <strong>phone number</strong> (optional).</li>
+<li>A <strong>username</strong>. You can also save a <strong>Hebrew name</strong>, a <strong>display name</strong>, and a <strong>profile picture</strong>.</li>
+</ul>
+<p>Your date of birth is used to enforce the 16-and-over age minimum. It is not shown to other members.</p>
+<h2>2. What you create in the app</h2>
+<ul>
+<li><strong>Messages</strong> you post in the community space, and any <strong>photos or files</strong> you attach to them.</li>
+<li><strong>Recipes</strong> you submit, including recipe photos and PDFs.</li>
+<li><strong>Reports</strong> you file about content or people, and the list of people you have <strong>blocked</strong>.</li>
+<li>Your Bible <strong>highlights, bookmarks, and saved glossary words</strong>.</li>
+</ul>
+<h2>3. What the app collects on its own</h2>
+<ul>
+<li>If you allow notifications: an <strong>Expo push token</strong>, your <strong>platform</strong> (iOS or Android), and your <strong>notification preferences</strong>.</li>
+<li>Ordinary <strong>server logs</strong> kept by our hosting provider (Supabase), including IP address and timestamps, as part of running the service.</li>
+</ul>
+<h2>4. Location</h2>
+<p>The Sabbath times feature can use your device location (approximate or precise) to work out your local sundown.</p>
+<ul>
+<li><strong>Your coordinates stay on your device.</strong> Sundown is calculated on the phone itself with an astronomical formula — no request goes out to a server to do it.</li>
+<li><strong>Your coordinates are never sent to us</strong>, never sent to anyone else, and never stored in our database.</li>
+<li>If you pick a city from the list instead, that choice is saved <strong>only on your device</strong>.</li>
+<li>You can refuse the location permission and still get Sabbath times by choosing a city, and you can revoke the permission at any time in your device settings.</li>
+</ul>
+<h2>5. What we do not do</h2>
+<ul>
+<li>No advertising, no advertising identifiers, no ad networks.</li>
+<li>No analytics or tracking SDKs. Nothing follows you across other apps or websites.</li>
+<li>We do not sell or rent your information, and we do not share it for anyone's marketing.</li>
+</ul>
+<h2>6. Who can see what</h2>
+<p>Other members see your <strong>username, Hebrew name, display name and picture</strong>, and anything you post. They <strong>cannot</strong> see your email, phone number, date of birth or full name — the app reads other people's details from a restricted public profile view that holds only those five public fields.</p>
+<p>Anyone, including people with no account, can see <strong>approved recipes</strong> and the public name of the member who submitted them. Recipe photos and PDFs are stored in a public file bucket, so do not upload anything you would not want to be public.</p>
+<p>Photos and files attached to community messages are stored <strong>privately</strong> and are served only to members of that channel, through short-lived signed links.</p>
+<p><strong>Admins</strong> (the community's moderators) can see your profile — including your email, full name, date of birth, phone number and membership status — and can see reports. Admins approve members, review reports, and remove content or accounts.</p>
+<h2>7. Who we share it with</h2>
+<ul>
+<li><strong>Supabase</strong> — hosting, sign-in, database and file storage. Your account, profile, messages, recipes and study data live there.</li>
+<li><strong>The Expo push notification service</strong>, and through it <strong>Apple (APNs)</strong> or <strong>Google (FCM)</strong> — used only to deliver the notifications you turned on. They receive your push token and the notification text, not your account data.</li>
+<li><strong>YouTube (Google)</strong> — the Watch screen embeds YouTube. Playing a video loads content from Google, which receives your IP address and device information under Google's own privacy policy.</li>
+<li><strong>Anthropic</strong> — an admin-only tool uses Claude to draft descriptions for map entries. It is sent admin-written place information only. No member data, no messages, no personal information is sent to it.</li>
+</ul>
+<p>We will also disclose information if the law requires us to.</p>
+<h2>8. Keeping it safe</h2>
+<ul>
+<li>Traffic between the app and our servers is encrypted in transit (TLS).</li>
+<li>Access is enforced row by row in the database: your study data and your profile are readable only by you, and by admins for profile data.</li>
+<li>Community message attachments live in a private bucket, not a public one.</li>
+</ul>
+<p>If we discover a breach that affects your information, we will notify you and the relevant authorities as the law requires.</p>
+<h2>9. How long we keep it, and how to delete it</h2>
+<p>We keep your information for as long as your account exists.</p>
+<p>You can <strong>delete your account at any time</strong> from <strong>More → My Account → Delete account</strong>. That removes your login, your profile, your messages, your device tokens and notification preferences, and your bookmarks, highlights and saved words.</p>
+<p>Recipes and posts you authored stay in the community library, but they are unlinked from you and no longer carry your name.</p>
+<p>Files you already uploaded may remain in file storage after your account is gone. Email <strong>justinbell@hyphyclub.com</strong> and we will remove them.</p>
+<p>Backups held by our hosting provider may keep a copy for a short period after deletion before they roll off.</p>
+<p>If you cannot get into the app to delete your account, email <strong>justinbell@hyphyclub.com</strong> from the address you registered with and we will do it for you within 30 days.</p>
+<h2>10. Age</h2>
+<p>Free Yisrael is for people <strong>16 and over</strong>. We ask for a date of birth at sign-up and refuse accounts under 16. If you believe someone under 16 has an account, email us and we will remove it.</p>
+<h2>11. Your choices and your rights</h2>
+<ul>
+<li>See and change your profile in <strong>More → My Account</strong>.</li>
+<li>Turn notifications on or off in <strong>More → Notifications</strong>, or in your device settings.</li>
+<li>Turn location on or off in your device settings.</li>
+<li>Ask for a copy of your information, ask us to correct it, or ask us to delete it — email <strong>justinbell@hyphyclub.com</strong>.</li>
+<li>Depending on where you live, you may have further rights under laws such as the GDPR or the CCPA. Write to us and we will honour them.</li>
+</ul>
+<h2>12. Changes to this policy</h2>
+<p>If this policy changes in a way that matters, we will post the new version in the app and change the date at the top. Carrying on using the app after that means you accept the new version.</p>
+<h2>13. Contact us</h2>
+<p>Free Yisrael is operated by <strong>Justin Bell</strong>.</p>
+<p>Email: <strong>justinbell@hyphyclub.com</strong></p>
+<footer>Free Yisrael · operated by Justin Bell · <a href="mailto:justinbell@hyphyclub.com">justinbell@hyphyclub.com</a></footer>
+</div>
+</body>
+</html>
